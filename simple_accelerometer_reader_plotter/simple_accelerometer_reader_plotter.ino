@@ -8,6 +8,11 @@ int z[] = {0, 0, 0, 0, 0, 0};
 
 void setup() {
   Serial.begin(9600);           //  setup serial 
+
+  while(!Serial) {
+    ;           //wait for connection to begin broadcasting data
+  }
+  
 }
 
 void loop() {
